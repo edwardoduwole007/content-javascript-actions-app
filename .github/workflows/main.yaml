@@ -11,7 +11,7 @@ jobs:
       id: hello
       uses: ./ # Uses an action in the root directory
       with:
-      who-to-greet: 'Eddie Baba' # change it to your name
+        who-to-greet: 'Eddie Baba' # change it to your name
       # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
